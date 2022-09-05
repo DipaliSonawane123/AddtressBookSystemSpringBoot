@@ -69,7 +69,13 @@ public class AddressBookService implements AddressBookIservice {
 
     @Override
     public List<AddressBook> getAddressBookByID(String email) {
+
         return repository.findAddressBookById(email);
+    }
+
+    @Override
+    public List<AddressBook> getAddressBookBycity(String city) {
+        return repository.findAddressBookBycity(city);
     }
 }
 

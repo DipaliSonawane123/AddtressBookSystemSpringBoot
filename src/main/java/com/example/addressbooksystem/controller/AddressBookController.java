@@ -74,4 +74,10 @@ public class AddressBookController {
         ResponseDto respDTO = new ResponseDto("*** Data by using email ***", employeeDataList);
         return new ResponseEntity<>(respDTO, HttpStatus.OK);
     }
+    @GetMapping("/city/{city}")
+    public ResponseEntity <ResponseDto> getEmployeeDataByCity(@PathVariable String city) {
+        List<AddressBook> employeeDataList = service.getAddressBookBycity(city);
+        ResponseDto respDTO = new ResponseDto("*** Data by using email ***", employeeDataList);
+        return new ResponseEntity<>(respDTO, HttpStatus.OK);
+    }
 }

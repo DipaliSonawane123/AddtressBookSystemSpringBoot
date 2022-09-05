@@ -21,6 +21,8 @@ public interface AddressBookIservice {
     void deleteById(Long Id);
 
     List<AddressBook> getAddressBookByID(String email);
+
+    List<AddressBook> getAddressBookBycity(String city);
 }
 
 
