@@ -62,7 +62,6 @@ public class AddressBookController {
         return new ResponseEntity<>(respDTO, HttpStatus.OK);
     }
     /**Api fot delete data*/
-
     @DeleteMapping("/delete/{Id}")
     public ResponseEntity<ResponseDto> deleteById(@PathVariable Long Id) {
         service.deleteById(Id);
