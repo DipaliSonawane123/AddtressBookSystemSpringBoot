@@ -19,6 +19,8 @@ public interface AddressBookIservice {
     AddressBook editById(AddressDto addressdto, Long Id);
 
     void deleteById(Long Id);
+
+    List<AddressBook> getAddressBookByID(String email);
 }
 
 

@@ -15,7 +15,7 @@ import java.util.List;
 public class AddressBook {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID")
+    @Column(name = "userid")
     private Long Id;
     String fullName;
     String phoneNumber;

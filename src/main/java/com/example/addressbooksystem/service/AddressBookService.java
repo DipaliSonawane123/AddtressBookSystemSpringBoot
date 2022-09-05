@@ -66,6 +66,11 @@ public class AddressBookService implements AddressBookIservice {
         } else throw new AddressBookException("Id:"+Id+" not present");
 
     }
+
+    @Override
+    public List<AddressBook> getAddressBookByID(String email) {
+        return repository.findAddressBookById(email);
     }
+}
 
 
